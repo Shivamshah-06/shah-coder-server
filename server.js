@@ -8,7 +8,7 @@ const errorMiddleware = require("./middleware/error-middleware");
 const adminRouter = require("./router/admin-route");
 
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://shah-coder-client.vercel.app/",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   credentials: true,
 };
