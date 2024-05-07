@@ -7,6 +7,7 @@ const { signupSchema, loginSchema } = require("../validators/auth-validator");
 const authMiddleware = require("../middleware/auth-middleware");
 const { service } = require("../controller/service-controller");
 
+router.route("/").get("hello world");
 router.route("/register").post(validate(signupSchema), register);
 router.route("/login").post(validate(loginSchema), login);
 router.route("/contact").post(contact);
